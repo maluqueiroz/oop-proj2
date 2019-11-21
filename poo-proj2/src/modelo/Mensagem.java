@@ -14,6 +14,11 @@ public class Mensagem {
 	public Mensagem() {
 		Mensagem.id++;
 		this.mid = Mensagem.id;
+		
+				
+		if (this.texto.length() > this.TAMANHO_MAX) {
+			// raise exception
+		}
 	}
 	
 	// TODO getter methods
